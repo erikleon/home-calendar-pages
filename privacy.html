@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy</title>
+<meta name="description" content="Privacy policy for mimir Home Calendar, a private Home Assistant integration.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<h1>Privacy policy</h1>
+<p class="lede">mimir Home Calendar. Last updated 30 September 2026.</p>
+
+<p>mimir Home Calendar connects Google Calendar to a Home Assistant server run by one
+household in its own home. It is operated by Erik Karwatowski for members of that household
+only. This page explains what Google user data it accesses and what happens to it.</p>
+
+<h2>What data it accesses</h2>
+<p>When a household member signs in with Google and grants permission, the app receives access
+to their Google Calendar through the scope <code>https://www.googleapis.com/auth/calendar</code>.
+With that access it:</p>
+<ul>
+<li>reads the list of their calendars and the events on them, including titles, times,
+locations and descriptions;</li>
+<li>creates or changes an event only when a household member asks Home Assistant to do so.</li>
+</ul>
+<p>It does not access email, contacts, files, or any other Google data.</p>
+
+<h2>How the data is used</h2>
+<p>Calendar data is used only to show the household's upcoming events in Home Assistant, and
+to answer household members' own questions about their schedule. Those answers are produced
+by software that runs on the same home server, including language models that run locally.
+Calendar data is not sent to any outside AI service.</p>
+
+<h2>Where the data is kept</h2>
+<p>All of it stays on the household's own server:</p>
+<ul>
+<li>The access token Google issues is stored in Home Assistant's configuration on that server.</li>
+<li>Recent event information is kept in Home Assistant's history, which by default is removed
+after 10 days.</li>
+<li>Encrypted backups of the server's configuration, which include the stored token, are kept
+on a disk in the same server and on one other computer owned by the family. They are
+encrypted before they leave the server.</li>
+</ul>
+
+<h2>Sharing</h2>
+<p>Google user data is not sold, rented, or shared with anyone outside the household. It is not
+used for advertising, and it is not used to train AI models. The app uses no analytics or
+tracking, and these pages set no cookies.</p>
+<p>The app's use and transfer of information received from Google APIs will adhere to the
+<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services
+User Data Policy</a>, including the Limited Use requirements.</p>
+
+<h2>Removing access and deleting data</h2>
+<p>You can remove the app's access at any time at
+<a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.
+Once access is removed, the stored token no longer works. To have the stored token and any
+calendar data deleted from the server and its backups, email the address below.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, the date at the top of this page changes with it.</p>
+
+<h2>Contact</h2>
+<p>Erik Karwatowski, <a href="mailto:ekarwatowski@gmail.com">ekarwatowski@gmail.com</a></p>
+
+<footer><a href="index.html">Home</a></footer>
+</main>
+</body>
+</html>
